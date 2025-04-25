@@ -1,31 +1,44 @@
-# Titanic Survival Prediction
+# Titanic Survival Prediction 
 
-This project is part of the **GrowthLink Data Science Internship**. The objective is to build a machine learning model to predict whether a passenger survived the Titanic disaster based on various attributes such as age, sex, ticket class, fare, etc.
+This project uses a Machine Learning pipeline to predict passenger survival on the Titanic using the Titanic dataset. It includes a comparative analysis of model performance **with SMOTE** to handle class imbalance.
+
+## Objective
+Develop a classification model to predict whether a passenger survived the Titanic disaster.
+
+## Dataset Source
+Dataset used: [Kaggle Titanic Dataset](https://www.kaggle.com/datasets/brendan45774/test-file)
+
+## Technologies Used
+- Python
+- Pandas, Seaborn, Matplotlib
+- Scikit-learn
+- imbalanced-learn (SMOTE)
+- Random Forest Classifier
+
+## How to Run
+1. Clone this repository
+2. Install dependencies:
+    ```bash
+    pip install -r requirements.txt
+    ```
+3. Run the Python script:
+    ```bash
+    python titanic_survival_prediction.py
+    ```
+
+## Features
+- Missing value handling
+- Encoding of categorical variables
+- Feature scaling
+- Class imbalance handled using **SMOTE**
+- Model evaluation with confusion matrix and classification report
+
+## Results
+The script prints out a **classification report** and **confusion matrix** for model performance **after applying SMOTE**.
+
+## Conclusion
+Applying SMOTE helps balance the dataset and improve precision for the minority class (`Survived = 1`). This enhances the model’s capability to correctly identify survivors.
 
 ---
 
-# Objective
-
-- Predict survival outcome of Titanic passengers.
-- Apply proper data cleaning, preprocessing, and encoding.
-- Train models with and without SMOTE for class balancing.
-- Evaluate model performance using precision, recall, and F1-score.
-
----
-
-## 🗂 Dataset
-
-We used the Titanic dataset available via Seaborn, which includes:
-- **Numerical features**: age, fare, number of siblings/spouses
-- **Categorical features**: sex, embarkation port, class
-- **Target variable**: `survived` (0 = No, 1 = Yes)
-
----
-
-## ⚙️ Steps to Run the Project
-
- This project is implemented in Google Colab and can be run in any Jupyter environment.
-
-1. Clone or download this repo:
-   ```bash
-   git clone https://github.com/your-username/titanic-survival-prediction.git
+Feel free to fork, explore, or enhance this repository!
