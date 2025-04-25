@@ -14,7 +14,7 @@ import pandas as pd
 # Load the Titanic dataset
 df = sns.load_dataset('titanic')
 
-# 🧹 Step 2: Data Cleaning & Preprocessing
+# Step 2: Data Cleaning & Preprocessing
 
 # 2.1 Drop 'Cabin' column
 try:
@@ -317,8 +317,4 @@ Both models were evaluated using:
 - If SMOTE improves precision, it shows value in tackling class imbalance.
 - If it doesn’t, the model may already handle the imbalance well without oversampling.
 
-> **Takeaway**: SMOTE can be powerful in imbalanced scenarios but should be evaluated carefully for each use case.
-
----
-
-Let me know if you’d like this formatted with **collapsible sections**, **interactive charts**, or if you want to include **code + output** together in the final notebook version.'''
+> **Takeaway**: SMOTE can be powerful in imbalanced scenarios but should be evaluated carefully for each use case. '''
